@@ -33,6 +33,12 @@ export function displayDialogue(text, onDisplayEnd) {
       closeBtn.click();
     }
   });
+
+  addEventListener("keydown", (key) => {
+    if (key.code === "Escape") {
+      closeBtn.click();
+    }
+  });
 }
 
 export function setCamScale(k) {
